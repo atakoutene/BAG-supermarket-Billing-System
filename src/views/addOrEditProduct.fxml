@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="434.0" prefWidth="428.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddOrEditProductController">
+   <children>
+      <Label layoutX="19.0" layoutY="66.0" text="Product Id :" AnchorPane.rightAnchor="348.0" />
+      <Label layoutX="20.0" layoutY="134.0" text="Name :" AnchorPane.rightAnchor="370.0" />
+      <JFXTextField fx:id="id" alignment="CENTER" layoutX="108.0" layoutY="52.0" prefHeight="25.0" prefWidth="297.0" />
+      <JFXTextField fx:id="name" alignment="CENTER" layoutX="82.0" layoutY="121.0" prefHeight="25.0" prefWidth="317.0" />
+      <Label layoutX="22.0" layoutY="200.0" text="Unit Price :" />
+      <Label layoutX="14.0" layoutY="14.0" text="CREATE OR EDIT A PRODUCT" textFill="#099cf2" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="save" layoutX="29.0" layoutY="389.0" onAction="#onSave" prefHeight="24.0" prefWidth="133.0" style="-fx-background-color: #0dd044; -fx-border-radius: 55;" text="Save" textFill="#fffefe" AnchorPane.bottomAnchor="21.0">
+         <font>
+            <Font name="Bookman Old Style Bold" size="12.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Click to save" />
+         </tooltip>
+      </JFXButton>
+      <JFXButton fx:id="cancel" layoutX="272.0" layoutY="389.0" onAction="#onCancel" prefHeight="24.0" prefWidth="133.0" style="-fx-background-color: #e72b2b;" text="Cancel" textFill="#fffdfd" AnchorPane.bottomAnchor="20.0" />
+      <JFXTextField fx:id="unitPrice" alignment="CENTER" layoutX="104.0" layoutY="188.0" prefHeight="25.0" prefWidth="297.0" />
+      <Label layoutX="23.0" layoutY="270.0" text="Quantity In Stock :" />
+      <JFXTextField fx:id="qtyInStock" alignment="CENTER" layoutX="142.0" layoutY="258.0" prefHeight="25.0" prefWidth="261.0" />
+      <Label layoutX="26.0" layoutY="339.0" text="Category :" />
+      <ComboBox fx:id="categoryComboBox" layoutX="107.0" layoutY="332.0" prefHeight="25.0" prefWidth="297.0" promptText="Select A Category" />
+   </children>
+</AnchorPane>
